@@ -1,20 +1,19 @@
 # 🚌 함께 타요 ( We TaYo )
 
-KPU 캡스톤 프로젝트로 시각 장애인을 위한 gps와 비콘을 이용
+시각 장애인을 위한 gps와 비콘을 이용
 승하차 보조 시스템입니다.
 
 <br>
 
-## 파일 구조
+## 프로젝트 구조
 
 ```
 project
-    └ wetayo_app ( flutter )
-    └ wetayo_driver_app ( flutter )
-    └ wetayo_api ( spring REST Api )
-    └ raspberry ( 팀원간 상의 )
-    └ wetayo_web ( web front server )
-    └ README.md
+    └ flutter_user_app : 사용자 앱
+    └ flutter_bus_app : 버스기사 앱
+    └ spring_api : graphQL방식의 서버
+    └ raspberrypi : 하차벨제어를 위한 라즈베리파이
+    └ description : 프로젝트 규칙, 제안서/보고서
 ```
 
 <br>
@@ -44,7 +43,9 @@ project
 
 <br>
 
-## git 초기화
+## git 간단 요약
+
+### git 초기화
 
 ```
 //터미널에서 자신이 원하는 디렉토리 이동 후 명령어 실행
@@ -59,7 +60,7 @@ git checkout -b develop origin/develop
 
 <br>
 
-## 작업 수행시
+### 작업 수행시
 
 ```
 // 브랜치 명은 브랜치 이름 규칙을 보자!
@@ -79,7 +80,7 @@ git branch -D [브랜치 명]    //작업한 브랜치 삭제
 
 <br>
 
-## 다른 사람의 작업 동기화
+### 다른 사람의 작업 동기화
 
 ```
 git checkout develop    //develop브랜치로 이동
